@@ -6,8 +6,8 @@ PKGNAME=	git-base-${GIT_VERSION}
 PKGREVISION=	1
 COMMENT=	GIT Tree History Storage Tool (base package)
 
-CONFLICTS+=		scmgit-base-[0-9]*
-SUPERSEDES+=		scmgit-base-[0-9]*
+CONFLICTS+=		scmgit-base<2.0
+SUPERSEDES+=		scmgit-base<2.0
 
 DEPENDS+=		p5-Error>=0.17015:../../devel/p5-Error
 # for git-send-email
