@@ -69,6 +69,10 @@ MESSAGE_SUBST+=		CHMOD=${CHMOD:Q}
 
 CONF_FILES_PERMS+=	${EGDIR}/DB_CONFIG ${OPENLDAP_VARDIR}/openldap-data/DB_CONFIG ${OPENLDAP_FILEPERMS}
 
+# XXX: Multiarch, install renames existing dir
+pre-install:
+	${RM} -rf ${DESTDIR}${EGDIR}/schema
+
 .include "../../mk/bsd.prefs.mk"
 .if ${OPSYS} == "Linux" || ${OPSYS} == "SunOS"
 .include "../../devel/libuuid/buildlink3.mk"
