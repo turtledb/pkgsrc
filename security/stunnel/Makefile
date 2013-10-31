@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.84 2013/07/12 10:45:03 jperkin Exp $
+# $NetBSD: Makefile,v 1.85 2013/10/31 15:58:30 jperkin Exp $
 
 DISTNAME=		stunnel-4.55
 PKGREVISION=		2
@@ -31,8 +31,8 @@ PKG_HOME.${STUNNEL_USER}?=	${VARBASE}/chroot/stunnel
 PKG_SYSCONFSUBDIR=	stunnel
 PKG_SYSCONFDIR_PERMS=	${ROOT_USER} ${STUNNEL_GROUP} 0750
 
-OWN_DIRS=		${PKG_HOME}/certs ${PKG_HOME}/crls
-OWN_DIRS_PERMS=		${PKG_HOME}/pid ${USER_GROUP} 0750
+OWN_DIRS=		${PKG_HOME.${STUNNEL_USER}}/certs ${PKG_HOME.${STUNNEL_USER}}/crls
+OWN_DIRS_PERMS=		${PKG_HOME.${STUNNEL_USER}}/pid ${USER_GROUP} 0750
 CONF_FILES+=		${PREFIX}/share/examples/stunnel/stunnel.conf-sample \
 			    ${PKG_SYSCONFDIR}/stunnel.conf
 
