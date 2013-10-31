@@ -4,8 +4,8 @@ PKGNAME=	git-gitk-${GIT_VERSION}
 COMMENT=	GIT Tree History Storage Tool (gitk)
 
 CONFLICTS+=	git-base<1.7.12nb1
-CONFLICTS+=	scmgit-gitk-[0-9]*
-SUPERSEDES+=	scmgit-gitk-[0-9]*
+CONFLICTS+=	scmgit-gitk<2.0
+SUPERSEDES+=	scmgit-gitk<2.0
 
 DEPENDS+=	git-base>=1.7.12nb1:../../devel/git-base
 

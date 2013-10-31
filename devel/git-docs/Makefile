@@ -3,8 +3,8 @@
 PKGNAME=	git-docs-${GIT_VERSION}
 COMMENT=	GIT Tree History Storage Tool (documentation)
 
-CONFLICTS+=		scmgit-docs-[0-9]*
-SUPERSEDES+=		scmgit-docs-[0-9]*
+CONFLICTS+=		scmgit-docs<2.0
+SUPERSEDES+=		scmgit-docs<2.0
 
 DISTINFO_FILE=		../../devel/git-base/distinfo
 
