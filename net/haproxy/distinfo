@@ -6,3 +6,4 @@ Size (haproxy-1.4.24.tar.gz) = 836768 bytes
 SHA1 (patch-aa) = b2cb2fd29427acf4e679bac90acb4a5dc9d29f11
 SHA1 (patch-ab) = 10e051618f1fc561f5e5c87af576a87e1c3a884b
 SHA1 (patch-examples_haproxy.cfg) = c0ccbe06ce64256d9bb4229796bd336fed61d7a7
+SHA1 (patch-src_session.c) = fd4e7e921ddf43868e7f712b64bda32ecdac26e1
