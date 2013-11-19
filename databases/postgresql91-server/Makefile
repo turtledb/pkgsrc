@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/09/15 08:28:29 adam Exp $
+# $NetBSD: Makefile,v 1.5 2012/12/16 01:52:07 obache Exp $
 
 PKGNAME=	${DISTNAME:C/-/91-server-/}
+PKGREVISION=	1
 COMMENT=	PostgreSQL database server programs
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 # mips has no TAS implementation
 NOT_FOR_PLATFORM=	*-*-mips
@@ -49,13 +48,9 @@ DL_LIBS+=	-lltdl
 PGUSER?=		pgsql
 PGGROUP?=		pgsql
 PGHOME?=		${PREFIX}/${PGUSER}
-PGDATA?=		${PGHOME}/data91
-PGLOGFILE?=		${VARBASE}/log/postgresql91.log
 FILES_SUBST+=		PGUSER=${PGUSER}
 FILES_SUBST+=		PGGROUP=${PGGROUP}
 FILES_SUBST+=		PGHOME=${PGHOME}
-FILES_SUBST+=		PGDATA=${PGDATA}
-FILES_SUBST+=		PGLOGFILE=${PGLOGFILE}
 BUILD_DEFS+=		PGHOME
 
 ALL_ENV+=		INSTALLED_LIBPQ=yes

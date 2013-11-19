@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/09/15 08:28:56 adam Exp $
+# $NetBSD: Makefile,v 1.5 2012/12/16 01:52:06 obache Exp $
 
 PKGNAME=	${DISTNAME:C/-/91-docs-/}
+PKGREVISION=	1
 COMMENT=	PostgreSQL database documentation
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../databases/postgresql91/Makefile.common"
 

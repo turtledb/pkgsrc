@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/09/15 08:32:40 adam Exp $
+# $NetBSD: Makefile,v 1.5 2012/12/16 01:52:07 obache Exp $
 
 PKGNAME=	${DISTNAME:C/-/91-upgrade-/}
+PKGREVISION=	1
 COMMENT=	PostgreSQL binary upgrade tool
 MAINTAINER=	pkgsrc-users@NetBSD.org
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	postgresql91-server>=${PKGVERSION_NOREV}:../../databases/postgresql91-server
 
