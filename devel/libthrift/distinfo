@@ -23,3 +23,4 @@ SHA1 (patch-lib_cpp_src_transport_TServerSocket.cpp) = dc54a0991f5918de04da73f18
 SHA1 (patch-lib_cpp_test_Benchmark.cpp) = 65a3a873b33f7290551c535b4ef8c9a109aae3e1
 SHA1 (patch-lib_erl_Makefile.in) = 74bfbc9f191f685cb175801a495ae4af0eaa6e69
 SHA1 (patch-lib_php_src_ext_thrift__protocol_php__thrift__protocol.cpp) = 6c1f1add0bfc652662efa59fc47d15e91a4d6a2b
+SHA1 (patch-lib_py_src_protocol_fastbinary.c) = fc661fa88a16327819e62e91ae601086861348c4
