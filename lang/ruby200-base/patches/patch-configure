@@ -1,4 +1,4 @@
-$NetBSD: patch-configure,v 1.4 2013/11/24 14:22:03 taca Exp $
+$NetBSD: patch-configure,v 1.2.2.2 2013/12/01 11:47:59 tron Exp $
 
 * Adding Interix and MirBSD support.
 * Ignore doxygen.

@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: distinfo,v 1.4.2.2 2013/12/01 11:47:59 tron Exp $
 
 SHA1 (ruby-2.0.0-p353.tar.bz2) = 0be863f1c39d7764c52cbb79ca06105743e27c42
 RMD160 (ruby-2.0.0-p353.tar.bz2) = e12445ef618953c89d1c198899b6a3a959fc55f2

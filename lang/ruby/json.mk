@@ -1,4 +1,4 @@
-# $NetBSD: json.mk,v 1.3 2013/11/24 14:05:08 taca Exp $
+# $NetBSD: json.mk,v 1.2.16.1 2013/12/01 11:07:13 tron Exp $
 
 # This file handles appropriate dependency to ruby-json pacakge.
 #
