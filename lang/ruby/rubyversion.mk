@@ -1,4 +1,4 @@
-# $NetBSD: rubyversion.mk,v 1.106 2013/11/24 14:22:03 taca Exp $
+# $NetBSD: rubyversion.mk,v 1.101.2.4 2013/12/01 11:47:59 tron Exp $
 #
 
 # This file determines which Ruby version is used as a dependency for

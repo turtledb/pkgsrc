@@ -1,4 +1,4 @@
-$NetBSD: patch-tool_rbinstall.rb,v 1.2 2013/11/24 14:22:03 taca Exp $
+$NetBSD: patch-tool_rbinstall.rb,v 1.1.2.1 2013/12/01 11:47:59 tron Exp $
 
 * Don't install which has already ${RUBY_VER} suffix.
 

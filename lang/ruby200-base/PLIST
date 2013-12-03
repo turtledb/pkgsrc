@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.2 2013/11/24 14:22:03 taca Exp $
+@comment $NetBSD: PLIST,v 1.1.2.1 2013/12/01 11:47:59 tron Exp $
 bin/erb${RUBY_VER}
 bin/gem${RUBY_VER}
 bin/irb${RUBY_VER}

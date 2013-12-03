@@ -1,4 +1,4 @@
-$NetBSD: distinfo,v 1.28 2013/11/24 14:17:19 taca Exp $
+$NetBSD: distinfo,v 1.26.2.1 2013/12/01 11:34:00 tron Exp $
 
 SHA1 (ruby-1.9.3-p484.tar.bz2) = 81dbaf390b16157069d8d1dd5b787db44d5f881c
 RMD160 (ruby-1.9.3-p484.tar.bz2) = 21b4acab12b974d1f99d994a40cdfe3fe8d0be95
