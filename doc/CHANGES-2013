@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2013,v 1.4329 2013/12/03 02:20:43 minskim Exp $
+$NetBSD: CHANGES-2013,v 1.4345 2013/12/04 03:36:02 minskim Exp $
 
 Changes to the packages collection and infrastructure in 2013:
 
@@ -6290,3 +6290,25 @@ Changes to the packages collection and infrastructure in 2013:
 	Added devel/libconfuse version 2.7 [mef 2013-12-03]
 	Added devel/libhid version 0.2.16 [mef 2013-12-03]
 	Updated graphics/tex-dvipng-doc to 1.14 [minskim 2013-12-03]
+	Updated security/mit-krb5 to 1.10.7 [adam 2013-12-03]
+	Updated www/squid3 to 3.3.11 [adam 2013-12-03]
+	Updated databases/mysql55-client to 5.5.35 [adam 2013-12-03]
+	Updated databases/mysql55-server to 5.5.35 [adam 2013-12-03]
+	Updated lang/sbcl to 1.1.14 [asau 2013-12-03]
+	Updated graphics/tex-epstopdf to 2.20 [minskim 2013-12-03]
+	Updated graphics/tex-epstopdf-doc to 2.20 [minskim 2013-12-03]
+	Updated databases/mysql56-client to 5.6.15 [adam 2013-12-03]
+	Updated databases/mysql56-server to 5.6.15 [adam 2013-12-03]
+	Updated graphics/tex-mptopdf to 2013 [minskim 2013-12-03]
+	Updated graphics/tex-mptopdf-doc to 2013 [minskim 2013-12-03]
+	Updated print/xdvipdfmx to 0.7.9 [minskim 2013-12-03]
+	Updated print/xetex to 0.9999.3 [minskim 2013-12-03]
+	Updated graphics/tex-metapost to 1.803 [minskim 2013-12-03]
+	Updated graphics/tex-metapost-doc to 1.803 [minskim 2013-12-03]
+	Added fonts/tex-lm-math version 1.958 [minskim 2013-12-03]
+	Added fonts/tex-lm-math-doc version 1.958 [minskim 2013-12-03]
+	Updated devel/xorg-util-macros to 1.18.0 [wiz 2013-12-04]
+	Updated x11/libdrm to 2.4.50 [wiz 2013-12-04]
+	Added fonts/tex-musixtex-fonts version 2013 [minskim 2013-12-04]
+	Added fonts/tex-musixtex-fonts-doc version 2013 [minskim 2013-12-04]
+	Updated fonts/ps2pkm to 1.5nb4 [minskim 2013-12-04]
