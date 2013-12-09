@@ -86,8 +86,28 @@ ALL_ENV+=	KRB5_CONFIG=${KRB5_CONFIG:Q}
 
 BUILDLINK_CPPFLAGS.mit-krb5!=	${SH_KRB5_CONFIG} --cflags
 BUILDLINK_LDFLAGS.mit-krb5!=	${SH_KRB5_CONFIG} --libs
+
+#
+# The SunOS builtin krb5-config does not support all of the arguments that the
+# MIT version does so we install a fake script which strips them out.
+#
 .    if ${OPSYS} == "SunOS"
+KRB5_CONFIG=			${BUILDLINK_DIR}/bin/krb5-config
 BUILDLINK_LDFLAGS.mit-krb5+=	-lgss
+BUILDLINK_TARGETS+=		fake-krb5-config
+
+fake-krb5-config:
+	${RUN}								\
+	src=../../security/mit-krb5/files/krb5-config-wrapper.sh;	\
+	dst=${BUILDLINK_DIR}/bin/krb5-config;				\
+	if [ ! -f $${dst} ]; then					\
+		${ECHO_BUILDLINK_MSG} "Creating $${dst}";		\
+		${ECHO} "#!${SH}" > $${dst};				\
+		${SED} -e "s,@KRB5_CONFIG@,${SH_KRB5_CONFIG:Q},g"	\
+		    $${src} >> $${dst};					\
+		${CHMOD} +x $${dst};					\
+	fi
+
 .    endif
 .  endif
 
