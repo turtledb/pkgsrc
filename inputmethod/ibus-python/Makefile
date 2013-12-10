@@ -38,6 +38,9 @@ INSTALL_DIRS=	bindings ibus
 CONFIGURE_ARGS+=		--disable-dconf
 CONFIGURE_ARGS+=		--disable-gconf
 CONFIGURE_ARGS+=		--enable-python-library
+
+PYTHON_VERSIONS_INCOMPATIBLE=	26
+
 .include "../../devel/py-gobject3/buildlink3.mk"
 PY_PATCHPLIST=	yes
 .include "../../lang/python/extension.mk"
