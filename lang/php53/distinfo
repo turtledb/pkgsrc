@@ -21,4 +21,5 @@ SHA1 (patch-ext_openssl_openssl.c) = f45f4322ac875db7b0bb86efb7cfda1f659ac6cc
 SHA1 (patch-ext_standard_basic__functions.c) = 017fd25e646af4d7eb2a0bd13b3c8da34eaee8c5
 SHA1 (patch-main_streams_cast.c) = d68b69c9418a8780b1610b8755487771f7c46a5a
 SHA1 (patch-php__mssql.c) = 524c4e5d7ede0e503049bf1febec58e0c4a29aa4
+SHA1 (patch-sapi_fpm_fpm_events_port.c) = a41733a27c3bee8c8318560f854d541136994a4c
 SHA1 (patch-sapi_fpm_php-fpm.conf.in) = 86137a37e74badf99c46d1ba7ca5d85f42bedfce
