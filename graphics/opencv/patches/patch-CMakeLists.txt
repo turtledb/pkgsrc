@@ -1,0 +1,37 @@
+$NetBSD$
+
+Ugly workaround for DATASET-931.
+Fix installation mess via https://bugzilla.redhat.com/show_bug.cgi?id=1031312.
+--- CMakeLists.txt.orig	2013-07-10 11:49:00.000000000 +0000
++++ CMakeLists.txt	2013-12-17 13:29:11.760485424 +0000
+@@ -65,10 +65,10 @@
+ # ----------------------------------------------------------------------------
+ # Break in case of popular CMake configuration mistakes
+ # ----------------------------------------------------------------------------
+-if(NOT CMAKE_SIZEOF_VOID_P GREATER 0)
+-  message(FATAL_ERROR "CMake fails to deterimine the bitness of target platform.
+-  Please check your CMake and compiler installation. If you are crosscompiling then ensure that your CMake toolchain file correctly sets the compiler details.")
+-endif()
++#if(NOT CMAKE_SIZEOF_VOID_P GREATER 0)
++#  message(FATAL_ERROR "CMake fails to deterimine the bitness of target platform.
++#  Please check your CMake and compiler installation. If you are crosscompiling then ensure that your CMake toolchain file correctly sets the compiler details.")
++#endif()
+ 
+ # ----------------------------------------------------------------------------
+ # Detect compiler and target platform architecture
+@@ -256,14 +256,8 @@
+   set(3P_LIBRARY_OUTPUT_PATH      "${OpenCV_BINARY_DIR}/3rdparty/lib${LIB_SUFFIX}")
+   set(OPENCV_LIB_INSTALL_PATH     lib${LIB_SUFFIX})
+   set(OPENCV_3P_LIB_INSTALL_PATH  share/OpenCV/3rdparty/${OPENCV_LIB_INSTALL_PATH})
++  set(OPENCV_CONFIG_INSTALL_PATH  lib${LIB_SUFFIX}/OpenCV)
+   set(OPENCV_INCLUDE_INSTALL_PATH include)
+-
+-  math(EXPR SIZEOF_VOID_P_BITS "8 * ${CMAKE_SIZEOF_VOID_P}")
+-  if(LIB_SUFFIX AND NOT SIZEOF_VOID_P_BITS EQUAL LIB_SUFFIX)
+-    set(OPENCV_CONFIG_INSTALL_PATH lib${LIB_SUFFIX}/cmake/opencv)
+-  else()
+-    set(OPENCV_CONFIG_INSTALL_PATH share/OpenCV)
+-  endif()
+ endif()
+ 
+ set(CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/${OPENCV_LIB_INSTALL_PATH}")
